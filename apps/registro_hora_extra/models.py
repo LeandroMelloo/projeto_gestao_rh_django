@@ -1,10 +1,10 @@
 from django.db import models
-from apps.funcionarios.models import Funcionario
+from apps.funcionarios.models import FuncionarioModel
 
 
-class RegistroHoraExtra(models.Model):
+class RegistroHoraExtraModel(models.Model):
     motivo = models.CharField(max_length=100)
-    funcionario = models.ForeignKey(Funcionario, on_delete=models.PROTECT) # PROTECT -> primeiro deletar o Registro Hora Extra, depois deletar funcionario
+    funcionario = models.ForeignKey(FuncionarioModel, on_delete=models.PROTECT) # PROTECT -> primeiro deletar o Registro Hora Extra, depois deletar funcionario
 
     def __int__(self):
         return self.id
