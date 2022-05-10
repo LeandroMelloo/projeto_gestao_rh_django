@@ -9,20 +9,29 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-INSTALLED_APPS = [
+BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.empresas',
+]
+
+LOCAL_APPS = [
+     'apps.empresas',
     'apps.funcionarios',
     'apps.departamentos',
     'apps.documentos',
     'apps.registro_hora_extra',
     'apps.controller',
 ]
+
+THIRD_APPS = [
+   
+]
+
+INSTALLED_APPS = LOCAL_APPS + BASE_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
