@@ -131,9 +131,3 @@ dmypy.json
 .pyc
 *.pyc
 .po
-
-# migrations
-migrations
-.migrations
-/migrations/*
-/migrations
