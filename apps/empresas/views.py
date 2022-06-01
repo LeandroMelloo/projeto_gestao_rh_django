@@ -1,5 +1,6 @@
 from django.views.generic.edit import CreateView
-from apps.empresas.models import EmpresaModel
+
+from .models import EmpresaModel
 
 
 class EmpresaView(CreateView):

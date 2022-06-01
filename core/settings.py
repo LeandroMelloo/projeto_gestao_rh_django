@@ -19,7 +19,7 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
-     'apps.empresas',
+    'apps.empresas',
     'apps.funcionarios',
     'apps.departamentos',
     'apps.documentos',

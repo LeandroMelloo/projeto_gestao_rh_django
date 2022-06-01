@@ -3,7 +3,7 @@
 {% block main %}
     <div class="row">
         <div class="col-sm">
-            Coluna 1
+            Empresa
         </div>
         <div class="col-sm">
            Olá {{ usuario.funcionario.nome }}
@@ -12,9 +12,10 @@
             <a href="{% url 'logout' %}">Logout</a>
 
             {% if usuario.funcionario.empresa %}
-                <a href="">Editar</a>
+                aqui
+                <a href="">Editar Empresa</a>
             {% else %}
-                <a href="">Criar</a>
+                <a href="">Criar Empresa</a>
             {% endif %}
         </div>
     </div>
